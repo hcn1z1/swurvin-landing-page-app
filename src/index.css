@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.montserrat{
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+.roboto{
+  font-family: "Roboto", serif;
+}
+
+.base-color{
+  color: #4D5DFA;
+}
+
+.base-color-background{
+  background-color: #4D5DFA;
+}
+
+.base-color-border{
+  border-color: #4D5DFA;
+}
+
+.secondary-color-background {
+  background-color: #F5F5F5E5;
+}
+
+.purple-background {
+  background-color: #A6A1FF;
+}
+
+.red-background {
+  background-color: #FFA8A8;
+}
+
+.body-background{
+  background-color:#1A1A1A;
+}
+
+
+.shadow-custom {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.circle-shadow {
+  box-shadow: 
+  0px 0px 20px 5px rgba(0, 0, 0, 0.25),
+  inset 0px 0px 15px 1px rgba(0, 0, 0, 0.25);   
+}
+
+.bubble-tail {
+  clip-path: path('M 0 0 L 0 5 L 3 5 C 1 5 0 3 0 0 Z');
+}
+
+.first-image-gradient {
+  background: linear-gradient(to bottom, #E0F7FA, #B2EBF2);
+}
+
+.second-image-gradient {
+  background: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
+}
+
+.third-image-gradient {
+  background: linear-gradient(to bottom, #BBDEFB, #D1C4E9);
+}
+
+.fourth-image-gradient {
+  background: linear-gradient(to bottom, #FFE0B2, #FFF9C4);
+}
+
+.fifth-image-gradient {
+  background: linear-gradient(to bottom, #B2DFDB, #C8E6C9);
+}
+
+.sixth-image-gradient {
+  background: linear-gradient(to bottom, #81D4FA, #FFFFFF);
+}

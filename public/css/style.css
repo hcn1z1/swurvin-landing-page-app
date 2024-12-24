@@ -1,0 +1,48 @@
+.montserrat{
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.base-color{
+    color: #4D5DFA;
+}
+
+.base-color-background{
+    background-color: #4D5DFA;
+}
+
+.base-color-border{
+    border-color: #4D5DFA;
+}
+
+.secondary-color-background {
+    background-color: #F5F5F5E5;
+}
+
+.purple-background {
+    background-color: #A6A1FF;
+}
+
+.red-background {
+    background-color: #FFA8A8;
+}
+
+.body-background{
+    background-color:#1A1A1A;
+}
+
+
+.shadow-custom {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.circle-shadow {
+    box-shadow: 
+    0px 0px 20px 5px rgba(0, 0, 0, 0.25),
+    inset 0px 0px 15px 1px rgba(0, 0, 0, 0.25);   
+}
+
+.bubble-tail {
+    clip-path: path('M 0 0 L 0 5 L 3 5 C 1 5 0 3 0 0 Z');
+}
