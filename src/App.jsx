@@ -1,14 +1,42 @@
-import React, { lazy } from "react";
+import React, { lazy , useState , useEffect} from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import LazyLoadSection from "./components/LazyLoadSection";
 import Footer from "./components/Footer";
 
-// Lazy imports for big sections
 const SecondSection = lazy(() => import("./components/SecondSection"));
 const ThirdSection = lazy(() => import("./components/ThirdSection"));
 
+
 function App() {
+  const [isScrollingAllowed, setIsScrollingAllowed] = useState(true);
+  const handleWheel = (event) => {
+    if (window.innerWidth > 768 && isScrollingAllowed) {
+      event.preventDefault(); 
+      setIsScrollingAllowed(false);
+
+      const direction = event.deltaY > 0 ? 1 : -1;
+      let scrollAmount = direction * window.innerHeight;
+      let scrollY = window.scrollY; 
+      
+      if (scrollAmount>0){
+        scrollAmount =  scrollY -  window.innerHeight * Math.round(scrollY/window.innerHeight)>0  ? window.innerHeight -  (scrollY -  window.innerHeight * Math.round(scrollY/window.innerHeight)) : scrollAmount;
+        window.scrollBy({
+          top: scrollY< window.innerHeight ? scrollAmount : scrollAmount - 16*4,
+          behavior: "smooth",
+        });
+      }
+      setTimeout(() => {
+        setIsScrollingAllowed(true);
+      }, 500);
+    }
+  };
+  /*useEffect(() => {
+    window.addEventListener("wheel", handleWheel, { passive: false });
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+    };
+  }, [isScrollingAllowed]);*/
   return (
     <div className="text-white font-sans antialiased body-background">
       <Navbar />

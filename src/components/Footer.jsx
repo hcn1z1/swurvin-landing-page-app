@@ -38,14 +38,14 @@ const Footer = () => {
                 <div>
                     <div className="flex items-center space-x-2 mb-4">
                         <img src="assets/images/logo.png" alt="SWURVIN Logo" className="h-8"/>
-                        <span className="font-semibold text-lg">SWURVIN</span>
+                        <span className="font-semibold text-lg">SWURVIN Inc</span>
                     </div>
                     <div>
                         <ul className="space-y-1">
-                            <li><a href="#" className="hover:underline">+1 (438) 462-2620</a></li>
-                            <li><a href="#" className="hover:underline">1395 Fleury Est, Suite 102.2</a></li>
-                            <li><a href="#" className="hover:underline">Montréal, Québec H2C 1R7</a></li>
-                            <li><a href="#" className="hover:underline">customer_support@swurvin.com</a></li>
+                            <li><a href="#" className="hover:underline">+1(347)-821-7019</a></li>
+                            <li><a href="#" className="hover:underline">1900 Albany Avenue, Brooklyn</a></li>
+                            <li><a href="#" className="hover:underline">New York, 11210</a></li>
+                            <li><a href="#" className="hover:underline">customer.support@swurvin.com</a></li>
                         </ul>
                     </div>
                 </div>

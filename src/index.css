@@ -8,6 +8,12 @@
   font-optical-sizing: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #4D5DFA #1A1A1A;
+}
+
 .roboto{
   font-family: "Roboto", serif;
 }
@@ -77,4 +83,21 @@
 
 .sixth-image-gradient {
   background: linear-gradient(to bottom, #81D4FA, #FFFFFF);
+}
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4D5DFA;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3C4CEB; 
 }

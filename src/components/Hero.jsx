@@ -6,9 +6,9 @@ const Hero = () => {
       id="home"
       className="relative h-[calc(100vh-4rem)] px-6 md:px-2 pt-6 sm:pt-20 md:pt-20 lg:pt-24 xl:pt-32 pb-14 body-background"
     >
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 h-full p-0 content-center">
         {/* Text */}
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-start">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-2 md:mb-4 montserrat">
             Your car problems solved in <br />
             <span className="text-4xl md:text-5xl lg:text-6xl base-color">
